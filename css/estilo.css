@@ -78,47 +78,62 @@ main {
     }
 
 h1 {
+    color: #7AB730;
     text-align: center;
     text-decoration: underline;
     margin: 20px 0px;
     text-transform: uppercase;
-    color: #7AB730;
+    
     }
 
 h2 {
+    color: #B5B8A8;
     text-align: center;
     margin: 20px 0px;
-    color: #B5B8A8;
+    
 }
 
 p {
     color: #7AB730;
     text-align: justify;
-    
 }
 
-.InicioN {    
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.Novedades {   
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.card-text {
+.p {
     color: #7AB730;
-    text-align: justify;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
+
+
+.video-container {
+    width: 30%; 
+    max-width: 640px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+
+video {
+    width: 100%; 
+    display: block; 
+}
+
+.tituloTestimonios {
+    color: #b1e770;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+    }
+
 /* Banner */
 
 .banner {
