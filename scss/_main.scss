@@ -1,0 +1,76 @@
+/* Main */
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-image: url("../img/fondoSeñora.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #7AB730;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #B5B8A8;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+p {
+    color: #7AB730;
+    text-align: justify;
+}
+
+.p {
+    color: #7AB730;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.p1 {
+    color: #7AB730;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+}
+
+.video-container {
+    width: 30%;
+    max-width: 640px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.tituloTestimonios {
+    color: #b1e770;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

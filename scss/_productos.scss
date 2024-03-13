@@ -1,0 +1,69 @@
+/* Productos */
+
+
+.productos {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.productos h3 {
+    color: #28a745;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.productos p {
+    font-size: 4rem;
+    color: #212121;
+    padding: 10px;
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.productos {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+
+}
+
+.tarjeta p {
+    margin: 10px 0;
+}
+
+.tarjeta button {
+    background-color: $color-verde;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tarjeta button:hover {
+    background-color: $color-flashero;
+}

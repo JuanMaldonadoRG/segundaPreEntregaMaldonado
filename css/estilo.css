@@ -1,17 +1,361 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "reset";
- *   |         ^^^^^^^
- *   '
- *   scss\app.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"reset\";\d\a   \2502          ^^^^^^^\a   \2575 \a   scss\\app.scss 2:9  root stylesheet";
+@charset "UTF-8";
+/* Header */
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
+.encabezado h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+
+.verde {
+  color: #7AB730;
+}
+
+.boton {
+  background-color: #7AB730;
+  color: #FAFAFA;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+.boton:hover {
+  background-color: #28a745;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
+.encabezado li {
+  list-style-type: none;
+  display: inline-block;
+}
+.encabezado li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.encabezado li a:hover {
+  color: #7AB730;
+}
+
+/* Productos */
+.productos {
+  text-align: center;
+  margin: 10vh;
+  border-bottom: 1px solid black;
+}
+
+.productos h3 {
+  color: #28a745;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.productos p {
+  font-size: 4rem;
+  color: #212121;
+  padding: 10px;
+}
+
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.productos {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.tarjeta img {
+  max-width: 100%;
+}
+
+.tarjeta p {
+  margin: 10px 0;
+}
+
+.tarjeta button {
+  background-color: #7AB730;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tarjeta button:hover {
+  background-color: #28a745;
+}
+
+/* Main */
+main {
+  margin: 20px;
+  padding: 20px;
+  background-image: url("../img/fondoSeñora.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #7AB730;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #B5B8A8;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+p {
+  color: #7AB730;
+  text-align: justify;
+}
+
+.p {
+  color: #7AB730;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.p1 {
+  color: #7AB730;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+}
+
+.video-container {
+  width: 30%;
+  max-width: 640px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.tituloTestimonios {
+  color: #b1e770;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* Footer */
+footer {
+  margin: 20px;
+  padding: 20px;
+  background-color: #333;
+  text-align: center;
+}
+
+.footerContenido {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #B5B8A8;
+}
+.footer h6 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+.infoContacto p {
+  color: #7AB730;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.redesSociales a {
+  color: #7AB730;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.redesSociales a:hover {
+  color: #28a745;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+/* Lo hacemos responsive: */
+@media (max-width: 1023px) {
+  /*Header*/
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .encabezado .boton {
+    display: none;
+  }
+  /*Banner*/
+  .bannerContenido p {
+    font-size: 2.5rem;
+  }
+  /*Productos*/
+  .productos {
+    margin: 5vh;
+    font-size: 2rem;
+  }
+  .productos h3,
+  .productos p {
+    font-size: inherit;
+  }
+  .contenedorProductos {
+    grid-template-columns: 1fr 1fr;
+  }
+  /*Footer*/
+  .footerContenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+@media (max-width: 768px) {
+  /*Productos */
+  .contenedorProductos {
+    grid-template-columns: 1fr;
+  }
+}
+/* Productos */
+.contenedorLanzamientos {
+  margin: 10px;
+  border: 1px solid #B5B8A8;
+  border-radius: 4px;
+}
+
+.imgLanzamientos {
+  display: block;
+  width: 25%;
+  height: auto;
+}
+
+.contenedorLanzamientos p {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* Iframe */
+iframe {
+  display: block;
+  margin: auto;
+}
+
+/* Formulario */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input [type=text],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btnformulario {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* PRODUCTOS */
+.tituloProductos {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 12px;
+}
+
+.card {
+  margin: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilo.css.map */

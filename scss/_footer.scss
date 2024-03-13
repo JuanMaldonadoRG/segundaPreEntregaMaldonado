@@ -1,0 +1,52 @@
+/* Footer */
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #B5B8A8;
+    }
+
+    h6 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+        color: #fff;
+    }
+}
+
+.infoContacto p {
+    color: #7AB730;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.redesSociales a {
+    color: $color-verde;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1rem;
+
+    &:hover {
+        color: $color-flashero;
+    }
+}
+
+.footer i {
+    margin-right: 10px;
+}
